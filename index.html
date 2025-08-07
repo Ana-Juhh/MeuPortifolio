@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Título da página -->
+    <title>Portfólio - Ana Júlia</title>
+
+    <!-- Favicon do site -->
+    <link rel="icon" href="assets/imgs/flor.png" type="image/png" />
+
+    <!-- Fontes Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitcount:wght@100..900&family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bibliotecas de ícones -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- CABEÇALHO / NAVEGAÇÃO -->
+    <header>
+      <div class="container nav-wrapper">
+        <h1 class="logo">ANAJULIA<span class="realce">DEV</span></h1>
+
+        <!-- Menu mobile com checkbox -->
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+        <nav class="navbar">
+          <a href="#sobre">Sobre</a>
+          <a href="#skills">Skills</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#github">GitHub</a>
+          <a href="#contato">Contato</a>
+          <a href="curriculo-ana-julia.pdf" download>Baixar CV</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO - Sessão de boas-vindas com animação de texto -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-img">
+          <img
+            src="assets/imgs/foto-perfil.jpeg"
+            alt="Foto de perfil"
+            class="profile-img"
+          />
+        </div>
+        <div class="hero-text">
+          <h2><span class="typed-text" id="typed"></span></h2>
+          <p>
+            Sou Ana Julia Ferreira, desenvolvedora web com foco em criar 
+            experiências visuais acessíveis, organizadas e funcionais. 
+            Estou iniciando na carreira tech e sigo evoluindo entre o front-end e o back-end.
+          </p>
+          <a href="#projetos" class="btn btn-primary">Ver meus projetos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE MIM -->
+    <section id="sobre" class="section">
+      <div class="container about-text">
+        <h2 class="section-title">Sobre mim</h2>
+        <p class="section-text">
+          Acabei de me formar em Análise e Desenvolvimento de Sistemas. 
+          Durante o curso, participei de diversos projetos que me permitiram 
+          desenvolver minhas habilidades como desenvolvedora.
+        </p>
+        <p class="section-text">
+          Tenho familiaridade com linguagens como HTML, CSS, JavaScript, Bootstrap e Figma. 
+          Além disso, possuo conhecimentos básicos em Java, Python, SQL, C e C#, 
+          o que me permite explorar tanto o desenvolvimento front-end quanto back-end.
+        </p>
+        <p class="section-text">
+          Estou sempre buscando aprender mais e colocar meus conhecimentos em prática por 
+          meio de projetos reais, colaborativos ou pessoais.
+        </p>
+      </div>
+    </section>
+
+    <!-- HABILIDADES / STACKS (Cards) -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills</h2>
+       <div class="skills-grid">
+          <div class="skill-card">
+            <i class="devicon-html5-plain colored"></i>
+            <span>HTML5</span>
+          </div>
+          <div class="skill-card">
+            <i class="devicon-css3-plain colored"></i>
+            <span>CSS3</span>
+          </div>
+          <div class="skill-card">
+            <i class="devicon-javascript-plain colored"></i>
+            <span>JavaScript</span>
+          </div>
+          <div class="skill-card">
+            <i class="devicon-bootstrap-plain colored"></i>
+            <span>Bootstrap</span>
+          </div>
+          <div class="skill-card">
+            <i class="devicon-figma-plain colored"></i>
+            <span>Figma</span>
+          </div>
+          <div class="skill-card">
+            <i class="devicon-java-plain colored"></i>
+            <span>Java</span>
+          </div>
+          <div class="skill-card">
+            <i class="devicon-python-plain colored"></i>
+            <span>Python</span>
+          </div>
+          <div class="skill-card">
+            <i class="devicon-mysql-plain colored"></i>
+            <span>SQL</span>
+          </div>
+          <div class="skill-card">
+            <i class="devicon-c-plain colored"></i>
+            <span>C</span>
+          </div>
+          <div class="skill-card">
+            <i class="devicon-csharp-plain colored"></i>
+            <span>C#</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="projetos" class="section">
+      <div class="container">
+        <h2>Projetos</h2>
+        <div class="projetos-grid">
+          <div class="projeto-card">
+            <img
+              src="assets/imgs/relivro.jpg"
+              alt="Print do projeto 1"
+            />
+            <h3>ReLivro</h3>
+            <p>
+               Plataforma de vendas de livros novos e usados. 
+               Desenvolvido com HTML, CSS e Bootstrap. 
+               Projeto focado na estrutura visual e responsividade.
+            </p>
+            <div class="btns">
+              <a href="https://relivro.netlify.app/" target="_blank">Ver Projeto</a>
+              <a href="https://github.com/Ana-Juhh/ReLivro" target="_blank">Ver Código</a>
+            </div>
+          </div>
+
+          <div class="projeto-card">
+            <img
+              src="assets/imgs/to-do list.jpg"
+              alt="Print do projeto 2"
+            />
+            <h3>To-do List</h3>
+            <p>
+              Lista de tarefas com recurso de arrastar e soltar (drag and drop). 
+              Desenvolvida com HTML, CSS e JavaScript, com armazenamento local das tarefas.
+            </p>
+            <div class="btns">
+              <a href="https://ana-juhh.github.io/To-do-list/" target="_blank">Ver Projeto</a>
+              <a href="https://github.com/Ana-Juhh/To-do-list" target="_blank">Ver Código</a>
+            </div>
+          </div>
+
+          <div class="projeto-card">
+            <img
+              src="assets/imgs/smartliving.jpg"
+              alt="Print do projeto 3"
+            />
+            <h3>SmartLiving</h3>
+            <p>
+               Site fictício de venda de produtos para casas inteligentes. 
+               <br>Desenvolvido com HTML, CSS e Bootstrap. 
+          
+            </p>
+            <div class="btns">
+              <a href="https://ana-juhh.github.io/SmartLiving/" target="_blank">Ver Projeto</a>
+              <a href="https://github.com/Ana-Juhh/SmartLiving" target="_blank">Ver Código</a>
+            </div>
+          </div>
+
+           <div class="projeto-card">
+            <img
+              src="assets/imgs/urbanrush.jpeg"
+              alt="Print do projeto 4"
+            />
+            <h3>UrbanRush</h3>
+            <p>
+                Jogo de corrida infinita criado na Unity, onde o personagem coleta 
+                moedas e desvia de obstáculos. Projeto com versões para PC e mobile.
+          
+            </p>
+            <div class="btns">
+              <a href="https://1drv.ms/u/c/99462ae255983774/EXOCVOpu6YFDjR2o-uWG2WcBZj4rbSdeFwbwltFjUhUAXA?e=hvwyoq" target="_blank">Ver Projeto</a>
+              <a href="https://github.com/Ana-Juhh/UrbanRush" target="_blank">Ver Código</a>
+            </div>
+          </div>
+
+          <div class="projeto-card">
+            <img
+              src="assets/imgs/taskease.png"
+              alt="Print do projeto 5"
+            />
+            <h3>TaskEase</h3>
+            <p>
+               Gerenciador de tarefas com cadastro e administração de tarefas. 
+               Projeto em grupo da faculdade usando PHP e banco de dados.
+            </p>
+            <div class="btns">
+              <a href="https://github.com/Ana-Juhh/TaskEase" target="_blank">Ver Código</a>
+            </div>
+          </div>
+
+          <div class="projeto-card">
+            <img
+              src="assets/imgs/educalink.jpg"
+              alt="Print do projeto 6"
+            />
+            <h3>EducaLink</h3>
+            <p>
+              A home page da EducaLink foi desenvolvida para ser a porta de entrada 
+              digital de uma escola. Utilizando HTML e CSS, layout responsivo 
+              e de fácil navegação.
+            </p>
+            <div class="btns">
+              <a href="https://educaalink.netlify.app/" target="_blank">Ver Projeto</a>
+              <a href="https://github.com/Ana-Juhh/EducaLink" target="_blank">Ver Código</a>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO GITHUB -->
+    <section id="github" class="section">
+      <div class="container github-card">
+        <h2 class="section-title">Meus códigos no GitHub</h2>
+        <p class="section-subtitle">
+           No meu GitHub você encontra projetos desenvolvidos durante a 
+           faculdade e estudos pessoais. Gosto de praticar com diferentes 
+           linguagens e explorar novas ideias enquanto evoluo como desenvolvedora.
+        </p>
+        <a href="https://github.com/Ana-Juhh" target="_blank" class="btn btn-primary">
+          <i class="devicon-github-original"></i> Ver meu GitHub
+        </a>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="section">
+      <div class="container contato-card">
+        <h2>Contato</h2>
+        <p>Me chama no LinkedIn ou manda um e-mail 😊</p>
+        <div class="social-links">
+          <a href="https://github.com/Ana-Juhh" class="btn-social">
+            <i class="devicon-github-original"></i> GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/anajuliasouzadev?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="btn-social">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+          <a href="ju.12ferre@gmail.com" class="btn-social">
+            <i class="fas fa-envelope"></i> E-mail
+          </a>
+          <a href="curriculo-ana-julia.pdf" download class="btn-social">
+            <i class="fas fa-file-download"></i> Baixar CV
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer>
+      <p>© 2025 Ana Julia Ferreira. Todos os direitos reservados.</p>
+    </footer>
+
+
+    <!-- SCRIPT: Animação Hello World na Hero -->
+    <script>
+      const text = "Hello, World!";
+      const typedEl = document.getElementById("typed");
+
+      let i = 0;
+      function digitar() {
+        if (i < text.length) {
+          typedEl.innerHTML += text.charAt(i);
+          i++;
+          setTimeout(digitar, 120);
+        }
+      }
+
+      window.addEventListener("DOMContentLoaded", digitar);
+    </script>
+  </body>
+</html>
