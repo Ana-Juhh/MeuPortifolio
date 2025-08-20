@@ -3,6 +3,7 @@
 
 Bem-vindo(a) ao meu portfólio! 🚀 Aqui você encontra meus principais projetos, criados com dedicação e foco em aprendizado constante.  
 
+🔗 **Acesse meu portfólio online:** [anajuliaportifolio.netlify.app](https://anajuliaportifolio.netlify.app)  
 ---
 
 ## 👩‍💻 Sobre mim
