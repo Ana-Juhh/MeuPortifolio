@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,400&family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-display: "DM Sans", sans-serif;
+  --font-sans: "Inter", sans-serif;
+
+  --color-candy-primary: #e040a0;
+  --color-candy-primary-hover: #c03080;
+  --color-candy-secondary: #7040e0;
+  --color-candy-tertiary: #40e0d0;
+  --color-candy-bg: #fff5fb;
+  --color-candy-surface: #ffffff;
+  --color-candy-dark: #2d1b33;
+  --color-candy-dark-muted: #6b5675;
+}
+
+@layer base {
+  body {
+    background-color: #fff5fb;
+    background-image: 
+        radial-gradient(at 0% 0%, rgba(224, 64, 160, 0.15) 0px, transparent 50%),
+        radial-gradient(at 100% 0%, rgba(112, 64, 224, 0.1) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(64, 224, 208, 0.15) 0px, transparent 50%),
+        radial-gradient(at 0% 100%, rgba(224, 64, 160, 0.1) 0px, transparent 50%);
+    color: #2d1b33;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+/* Neo-brutalist Candy Card Class */
+.candy-card {
+  background: #ffffff;
+  border: 3px solid #2d1b33;
+  box-shadow: 8px 8px 0px #2d1b33;
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border-radius: 2rem;
+}
+
+.candy-card:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 12px 12px 0px #2d1b33;
+}
+
+/* Buttons Primary & Secondary Neo-brutalist Style */
+.candy-btn-primary {
+  background: #e040a0;
+  color: white;
+  border: 3px solid #2d1b33;
+  box-shadow: 4px 4px 0px #2d1b33;
+  border-radius: 9999px;
+  transition: all 0.2s;
+}
+
+.candy-btn-primary:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px #2d1b33;
+}
+
+.candy-btn-secondary {
+  background: #ffffff;
+  color: #2d1b33;
+  border: 3px solid #2d1b33;
+  box-shadow: 4px 4px 0px #2d1b33;
+  border-radius: 9999px;
+  transition: all 0.2s;
+}
+
+.candy-btn-secondary:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px #2d1b33;
+}
+
+/* Caret blinking typewriter style */
+.typewriter::after {
+  content: '|';
+  animation: blink 1s infinite;
+  color: #e040a0;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Skill Badge interactive style */
+.skill-badge {
+  background: #ffffff;
+  border: 2px solid #2d1b33;
+  padding: 0.25rem 1rem;
+  border-radius: 9999px;
+  font-weight: 700;
+  font-size: 0.875rem;
+  transition: all 0.2s;
+}
+
+.skill-badge:hover {
+  background: #e040a0;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Perfect Print Layout for A4 Resume PDF */
+@media print {
+  @page {
+    size: A4;
+    margin: 1.5cm;
+  }
+  
+  html, body {
+    background: white !important;
+    background-image: none !important;
+    color: #111111 !important;
+    font-size: 12px !important;
+    width: 100% !important;
+    height: auto !important;
+    overflow: visible !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Hide everything on the main landing page and modals control bars */
+  header, footer, section, #hero-portrait-card, #hero-scroll-down-btn,
+  .print\:hidden, [id*="-btn"], button, svg, .absolute {
+    display: none !important;
+  }
+
+  /* Make modal container full screen and transparent */
+  #cv-modal-backdrop {
+    position: static !important;
+    display: block !important;
+    background: white !important;
+    width: 100% !important;
+    height: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    inset: auto !important;
+  }
+
+  #cv-modal-box {
+    position: static !important;
+    display: block !important;
+    background: white !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+    max-height: none !important;
+    overflow: visible !important;
+  }
+
+  #cv-printable-document {
+    display: block !important;
+    width: 100% !important;
+    color: #111111 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    line-height: 1.5 !important;
+  }
+
+  /* Explicitly force elements to show text in dark ink and maintain borders */
+  h2, h3, h4, p, span, a, li {
+    color: #111111 !important;
+  }
+  
+  .border-b-4, .border-b-2 {
+    border-color: #e5e7eb !important;
+  }
+  
+  .bg-candy-bg, .bg-candy-primary\/5 {
+    background-color: #f9fafb !important;
+    border: 1px solid #e5e7eb !important;
+  }
+}
