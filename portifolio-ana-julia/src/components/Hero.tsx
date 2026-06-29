@@ -135,7 +135,7 @@ export default function Hero({ lang, onCVClick }: HeroProps) {
             >
               <div className="aspect-[4/5] rounded-[1.5rem] overflow-hidden border-2 border-candy-dark bg-candy-bg">
                 <img 
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuayuHfQAfWOWadMWfaes1eDivXfkJliccAWU5HqR6a7xf68IfhzXxFlPlA7-0BZHUZUHfgTo3lGgHiTv_nAo0YPdHnNUpbGhQzPDP-gaLdrHvLA4CRmqSgzNMa1a77h2CzWRta7YzYY6CJ_7VsJh0UKPcJmShKzzmia9aW-GbThdlhzdNa9BQK04D5lVpSBrDbuRSzie32uz7ux-hXbOWRLEhLQAFYNR8xApHk_03xQbzCfufGIRf7mlXsPD_ZEBwyA58zFlckQ"
+                  src=" \public\assets\imgs/foto-perfil.jpeg"
                   alt="Ana Júlia Ferreira - Full Stack Developer portrait"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
