@@ -135,7 +135,7 @@ export default function Hero({ lang, onCVClick }: HeroProps) {
             >
               <div className="aspect-[4/5] rounded-[1.5rem] overflow-hidden border-2 border-candy-dark bg-candy-bg">
                 <img 
-                  src=" \public\assets\imgs/foto-perfil.jpeg"
+                  src=" \public\assets\imgs/foto-perfil.png"
                   alt="Ana Júlia Ferreira - Full Stack Developer portrait"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
