@@ -1,8 +1,5 @@
 # 🚀 Meu Portfólio Pessoal
 
-<p align="center">
-  <img src="./public/favicon.png" alt="Favicon" width="80" height="80" style="border-radius: 50%">
-</p>
 
 <h3 align="center">Ana Júlia Ferreira</h3>
 
